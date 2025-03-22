@@ -10,21 +10,25 @@ powershell
 Copy
 Edit
 py -m venv .venv
+
 Step 2 - Activate the Virtual Environment
 powershell
 Copy
 Edit
 .venv\Scripts\activate
+
 Step 3 - Install Required Packages
 powershell
 Copy
 Edit
 py -m pip install --upgrade -r requirements.txt
+
 Step 4 - (Optional) Verify Virtual Environment Setup
 powershell
 Copy
 Edit
 py -m datafun_venv_checker.venv_checker
+
 Step 5 - Run the Initial Project Script
 powershell
 Copy

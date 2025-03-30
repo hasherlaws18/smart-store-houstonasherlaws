@@ -3,3 +3,426 @@
 2025-03-20 21:55:31.493 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\Projects\smart-store-houstonasherlaws\data\raw\products_data.csv.
 2025-03-20 21:55:31.500 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\Projects\smart-store-houstonasherlaws\data\raw\sales_data.csv.
 2025-03-20 21:55:31.504 | INFO     | __main__:main:45 - Data preparation complete.
+2025-03-29 00:23:44.519 | INFO     | __main__:main:162 - ==================================
+2025-03-29 00:23:44.519 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-29 00:23:44.519 | INFO     | __main__:main:164 - ==================================
+2025-03-29 00:23:44.520 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-29 00:23:44.520 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-29 00:23:44.521 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-29 00:23:44.521 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-29 00:23:44.521 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-29 00:23:44.521 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-29 00:23:44.547 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-29 00:23:44.548 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-29 00:23:44.548 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-29 00:23:44.549 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-29 00:23:44.560 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-29 00:23:44.560 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-29 00:23:44.560 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-29 00:23:44.561 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-29 00:23:44.562 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-29 00:23:44.562 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-29 00:23:44.562 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-29 00:23:44.563 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-29 00:23:44.563 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-29 00:23:44.563 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-29 00:25:39.512 | INFO     | __main__:main:227 - ==================================
+2025-03-29 00:25:39.512 | INFO     | __main__:main:228 - STARTING prepare_products_data.py
+2025-03-29 00:25:39.513 | INFO     | __main__:main:229 - ==================================
+2025-03-29 00:25:39.513 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-29 00:25:39.514 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-29 00:25:39.514 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-29 00:25:39.514 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-29 00:25:39.514 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\products_data.csv
+2025-03-29 00:25:39.526 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 8 rows and 6 columns
+2025-03-29 00:25:39.527 | INFO     | __main__:main:242 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, Supplier
+2025-03-29 00:25:39.527 | INFO     | __main__:main:243 - Initial dataframe shape: (8, 6)
+2025-03-29 00:25:39.528 | INFO     | __main__:main:252 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, Supplier -> supplier
+2025-03-29 00:25:39.528 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-29 00:25:39.530 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-29 00:25:39.531 | INFO     | __main__:remove_duplicates:107 - 8 records remaining after removing duplicates.
+2025-03-29 00:25:39.532 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-29 00:25:39.533 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 00:25:39.536 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 00:25:39.536 | INFO     | __main__:handle_missing_values:141 - 8 records remaining after handling missing values.
+2025-03-29 00:25:39.536 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-29 00:25:39.537 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-29 00:25:39.537 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-29 00:25:39.538 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-29 00:25:39.538 | INFO     | __main__:remove_outliers:175 - 8 records remaining after removing outliers.
+2025-03-29 00:25:39.538 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-29 00:25:39.538 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-29 00:25:39.539 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-29 00:38:27.505 | INFO     | __main__:main:227 - ==================================
+2025-03-29 00:38:27.505 | INFO     | __main__:main:228 - STARTING prepare_sales_data.py
+2025-03-29 00:38:27.505 | INFO     | __main__:main:229 - ==================================
+2025-03-29 00:38:27.506 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-29 00:38:27.506 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-29 00:38:27.506 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-29 00:38:27.506 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-29 00:38:27.507 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\sales_data.csv
+2025-03-29 00:38:27.511 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-29 00:38:27.511 | INFO     | __main__:main:242 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, Discount percent, Payment Type
+2025-03-29 00:38:27.512 | INFO     | __main__:main:243 - Initial dataframe shape: (94, 9)
+2025-03-29 00:38:27.512 | INFO     | __main__:main:252 - Cleaned column names: TransactionID -> transactionid, SaleDate -> saledate, CustomerID -> customerid, ProductID -> productid, StoreID -> storeid, CampaignID -> campaignid, SaleAmount -> saleamount, Discount percent -> discount_percent, Payment Type -> payment_type
+2025-03-29 00:38:27.513 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-29 00:38:27.515 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-29 00:38:27.516 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-29 00:38:27.516 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-29 00:38:27.517 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-29 00:38:27.519 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-29 00:38:27.521 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-29 00:38:27.521 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-29 00:38:27.522 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-29 00:38:27.522 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-29 00:38:27.522 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-29 00:38:27.522 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-29 00:38:27.522 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-29 00:38:27.523 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-29 00:38:27.524 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-29 00:44:09.932 | INFO     | __main__:main:227 - ==================================
+2025-03-29 00:44:09.932 | INFO     | __main__:main:228 - STARTING prepare_sales_data.py
+2025-03-29 00:44:09.933 | INFO     | __main__:main:229 - ==================================
+2025-03-29 00:44:09.934 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-29 00:44:09.934 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-29 00:44:09.934 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-29 00:44:09.934 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-29 00:44:09.935 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\sales_data.csv
+2025-03-29 00:44:09.938 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-29 00:44:09.939 | INFO     | __main__:main:242 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, Discount percent, Payment Type
+2025-03-29 00:44:09.939 | INFO     | __main__:main:243 - Initial dataframe shape: (94, 9)
+2025-03-29 00:44:09.939 | INFO     | __main__:main:252 - Cleaned column names: TransactionID -> transactionid, SaleDate -> saledate, CustomerID -> customerid, ProductID -> productid, StoreID -> storeid, CampaignID -> campaignid, SaleAmount -> saleamount, Discount percent -> discount_percent, Payment Type -> payment_type
+2025-03-29 00:44:09.940 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-29 00:44:09.942 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-29 00:44:09.943 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-29 00:44:09.943 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-29 00:44:09.944 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-29 00:44:09.946 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-29 00:44:09.948 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-29 00:44:09.948 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-29 00:44:09.948 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-29 00:44:09.949 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-29 00:44:09.949 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-29 00:44:09.949 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-29 00:44:09.949 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-29 00:44:09.950 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-29 00:44:09.950 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-30 16:33:51.269 | INFO     | __main__:main:162 - ==================================
+2025-03-30 16:33:51.270 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 16:33:51.270 | INFO     | __main__:main:164 - ==================================
+2025-03-30 16:33:51.270 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 16:33:51.271 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 16:33:51.271 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 16:33:51.272 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 16:33:51.272 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 16:33:51.272 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 16:33:51.313 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 16:33:51.313 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 16:33:51.314 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 16:33:51.316 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 16:33:51.330 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 16:33:51.332 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 16:33:51.332 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 16:33:51.334 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 16:33:51.335 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 16:33:51.335 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 16:33:51.335 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 16:33:51.336 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 16:33:51.336 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 16:33:51.336 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 16:59:23.831 | INFO     | __main__:main:162 - ==================================
+2025-03-30 16:59:23.831 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 16:59:23.831 | INFO     | __main__:main:164 - ==================================
+2025-03-30 16:59:23.831 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 16:59:23.832 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 16:59:23.833 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 16:59:23.833 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 16:59:23.833 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 16:59:23.834 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 16:59:23.857 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 16:59:23.857 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 16:59:23.858 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 16:59:23.860 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 16:59:23.875 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 16:59:23.875 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 16:59:23.875 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 16:59:23.877 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 16:59:23.878 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 16:59:23.878 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 16:59:23.878 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 16:59:23.878 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 16:59:23.878 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 16:59:23.879 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:00:11.866 | INFO     | __main__:main:162 - ==================================
+2025-03-30 17:00:11.867 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 17:00:11.867 | INFO     | __main__:main:164 - ==================================
+2025-03-30 17:00:11.867 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:00:11.867 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:00:11.867 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:00:11.868 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 17:00:11.868 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 17:00:11.868 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 17:00:11.872 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 17:00:11.872 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 17:00:11.873 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 17:00:11.873 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 17:00:11.874 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 17:00:11.875 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 17:00:11.875 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 17:00:11.876 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 17:00:11.876 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 17:00:11.876 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 17:00:11.876 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 17:00:11.877 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 17:00:11.877 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 17:00:11.878 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:02:03.546 | INFO     | __main__:main:162 - ==================================
+2025-03-30 17:02:03.547 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 17:02:03.547 | INFO     | __main__:main:164 - ==================================
+2025-03-30 17:02:03.548 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:02:03.548 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:02:03.548 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:02:03.548 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 17:02:03.549 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 17:02:03.549 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 17:02:03.560 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 17:02:03.561 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 17:02:03.561 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 17:02:03.562 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 17:02:03.572 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 17:02:03.572 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 17:02:03.573 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 17:02:03.574 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 17:02:03.574 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 17:02:03.575 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 17:02:03.575 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 17:02:03.575 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 17:02:03.575 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 17:02:03.575 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:04:55.583 | INFO     | __main__:main:162 - ==================================
+2025-03-30 17:04:55.584 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 17:04:55.584 | INFO     | __main__:main:164 - ==================================
+2025-03-30 17:04:55.584 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:04:55.585 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:04:55.585 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:04:55.585 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 17:04:55.585 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 17:04:55.585 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 17:04:55.589 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 17:04:55.590 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 17:04:55.590 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 17:04:55.590 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 17:04:55.592 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 17:04:55.592 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 17:04:55.592 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 17:04:55.593 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 17:04:55.593 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 17:04:55.593 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 17:04:55.594 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 17:04:55.594 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 17:04:55.594 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 17:04:55.595 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:06:27.111 | INFO     | __main__:main:162 - ==================================
+2025-03-30 17:06:27.111 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 17:06:27.112 | INFO     | __main__:main:164 - ==================================
+2025-03-30 17:06:27.113 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:06:27.113 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:06:27.113 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:06:27.113 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 17:06:27.113 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 17:06:27.114 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 17:06:27.117 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 17:06:27.117 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 17:06:27.117 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 17:06:27.118 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 17:06:27.120 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 17:06:27.120 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 17:06:27.120 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 17:06:27.121 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 17:06:27.122 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 17:06:27.122 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 17:06:27.122 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 17:06:27.123 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 17:06:27.123 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 17:06:27.123 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:06:27.126 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-houstonasherlaws\data\prepared\customers_data_prepared.csv
+2025-03-30 17:06:27.126 | INFO     | __main__:main:202 - ==================================
+2025-03-30 17:06:27.127 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-03-30 17:06:27.127 | INFO     | __main__:main:204 - ==================================
+2025-03-30 17:07:17.172 | INFO     | __main__:main:162 - ==================================
+2025-03-30 17:07:17.172 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-30 17:07:17.173 | INFO     | __main__:main:164 - ==================================
+2025-03-30 17:07:17.173 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:07:17.173 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:07:17.173 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:07:17.173 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-houstonasherlaws\scripts
+2025-03-30 17:07:17.174 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-30 17:07:17.174 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\customers_data.csv
+2025-03-30 17:07:17.178 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-30 17:07:17.178 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-30 17:07:17.179 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-30 17:07:17.180 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-30 17:07:17.181 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-30 17:07:17.181 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-30 17:07:17.181 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-30 17:07:17.182 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-30 17:07:17.183 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-30 17:07:17.183 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-30 17:07:17.183 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-30 17:07:17.184 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-30 17:07:17.184 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-30 17:07:17.184 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-30 17:07:17.186 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-houstonasherlaws\data\prepared\customers_data_prepared.csv
+2025-03-30 17:07:17.186 | INFO     | __main__:main:202 - ==================================
+2025-03-30 17:07:17.187 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-03-30 17:07:17.187 | INFO     | __main__:main:204 - ==================================
+2025-03-30 17:08:44.559 | INFO     | __main__:main:227 - ==================================
+2025-03-30 17:08:44.559 | INFO     | __main__:main:228 - STARTING prepare_products_data.py
+2025-03-30 17:08:44.561 | INFO     | __main__:main:229 - ==================================
+2025-03-30 17:08:44.562 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:08:44.562 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:08:44.562 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:08:44.562 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-30 17:08:44.562 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\products_data.csv
+2025-03-30 17:08:44.566 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 8 rows and 6 columns
+2025-03-30 17:08:44.567 | INFO     | __main__:main:242 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, Supplier
+2025-03-30 17:08:44.567 | INFO     | __main__:main:243 - Initial dataframe shape: (8, 6)
+2025-03-30 17:08:44.567 | INFO     | __main__:main:252 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, Supplier -> supplier
+2025-03-30 17:08:44.567 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-30 17:08:44.571 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-30 17:08:44.572 | INFO     | __main__:remove_duplicates:107 - 8 records remaining after removing duplicates.
+2025-03-30 17:08:44.572 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-30 17:08:44.573 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-30 17:08:44.575 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-30 17:08:44.576 | INFO     | __main__:handle_missing_values:141 - 8 records remaining after handling missing values.
+2025-03-30 17:08:44.576 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-30 17:08:44.576 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-30 17:08:44.577 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-30 17:08:44.577 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-30 17:08:44.578 | INFO     | __main__:remove_outliers:175 - 8 records remaining after removing outliers.
+2025-03-30 17:08:44.578 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-30 17:08:44.578 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-30 17:08:44.578 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-30 17:08:44.581 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-houstonasherlaws\data\prepared\products_data_prepared.csv
+2025-03-30 17:08:44.581 | INFO     | __main__:main:264 - ==================================
+2025-03-30 17:08:44.581 | INFO     | __main__:main:265 - FINISHED prepare_products_data.py
+2025-03-30 17:08:44.582 | INFO     | __main__:main:266 - ==================================
+2025-03-30 17:08:58.611 | INFO     | __main__:main:227 - ==================================
+2025-03-30 17:08:58.611 | INFO     | __main__:main:228 - STARTING prepare_sales_data.py
+2025-03-30 17:08:58.612 | INFO     | __main__:main:229 - ==================================
+2025-03-30 17:08:58.612 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-houstonasherlaws
+2025-03-30 17:08:58.612 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-houstonasherlaws\data\raw
+2025-03-30 17:08:58.613 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-houstonasherlaws\data\prepared
+2025-03-30 17:08:58.613 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-30 17:08:58.613 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-houstonasherlaws\data\raw\sales_data.csv
+2025-03-30 17:08:58.617 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-30 17:08:58.618 | INFO     | __main__:main:242 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, Discount percent, Payment Type
+2025-03-30 17:08:58.618 | INFO     | __main__:main:243 - Initial dataframe shape: (94, 9)
+2025-03-30 17:08:58.619 | INFO     | __main__:main:252 - Cleaned column names: TransactionID -> transactionid, SaleDate -> saledate, CustomerID -> customerid, ProductID -> productid, StoreID -> storeid, CampaignID -> campaignid, SaleAmount -> saleamount, Discount percent -> discount_percent, Payment Type -> payment_type
+2025-03-30 17:08:58.620 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-30 17:08:58.621 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-30 17:08:58.622 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-30 17:08:58.622 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-30 17:08:58.623 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-30 17:08:58.625 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid       0
+saledate            0
+customerid          0
+productid           0
+storeid             0
+campaignid          0
+saleamount          0
+discount_percent    0
+payment_type        0
+dtype: int64
+2025-03-30 17:08:58.626 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-30 17:08:58.626 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-30 17:08:58.626 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-30 17:08:58.627 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-30 17:08:58.627 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-30 17:08:58.627 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-30 17:08:58.628 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-30 17:08:58.628 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-30 17:08:58.629 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-30 17:08:58.632 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-houstonasherlaws\data\prepared\sales_data_prepared.csv
+2025-03-30 17:08:58.632 | INFO     | __main__:main:264 - ==================================
+2025-03-30 17:08:58.632 | INFO     | __main__:main:265 - FINISHED prepare_sales_data.py
+2025-03-30 17:08:58.632 | INFO     | __main__:main:266 - ==================================

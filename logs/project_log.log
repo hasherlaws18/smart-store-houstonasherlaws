@@ -567,3 +567,9 @@ dtype: int64
 2025-03-31 02:09:30.070 | INFO     | __main__:main:124 - ======================
 2025-03-31 02:09:30.070 | INFO     | __main__:main:125 - FINISHED data_prep.py
 2025-03-31 02:09:30.070 | INFO     | __main__:main:126 - ======================
+2025-04-06 22:46:06.698 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-06 22:46:06.701 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-06 22:46:06.701 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-06 22:47:51.873 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-06 22:47:51.873 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-06 22:47:51.874 | INFO     | __main__:main:45 - Data warehouse creation complete.

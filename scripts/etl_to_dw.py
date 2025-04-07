@@ -16,11 +16,12 @@ PREPARED_DATA_DIR = pathlib.Path("data").joinpath("prepared")
 def create_schema(cursor: sqlite3.Cursor) -> None:
     """Create tables in the data warehouse if they don't exist."""
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS customer (
+        CREATE TABLE IF NOT EXISTS customer  (
             customer_id INTEGER PRIMARY KEY,
             name TEXT,
             region TEXT,
             join_date TEXT,
+            LoyaltyPoints INTEGER,
             PreferredContactMethod TEXT,
             StandardDateTime TEXT
                   
@@ -44,6 +45,7 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             product_id INTEGER,
             sale_amount REAL,
             sale_date TEXT,
+            quantity INTEGER,
             FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
             FOREIGN KEY (product_id) REFERENCES product (product_id)
         )

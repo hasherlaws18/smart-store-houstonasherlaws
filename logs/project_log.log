@@ -573,3 +573,6 @@ dtype: int64
 2025-04-06 22:47:51.873 | INFO     | __main__:main:43 - Starting data warehouse creation...
 2025-04-06 22:47:51.873 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
 2025-04-06 22:47:51.874 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-07 20:00:45.764 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-07 20:00:45.765 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-07 20:00:45.765 | INFO     | __main__:main:45 - Data warehouse creation complete.

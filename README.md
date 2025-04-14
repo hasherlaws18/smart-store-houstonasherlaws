@@ -64,6 +64,7 @@ pyspark[sql]
 📊 Overview
 This Power BI project demonstrates an end-to-end data analysis pipeline, from ETL to visualization. It uses data from a sales database (SQLite) and presents interactive insights in a Power BI dashboard.
 
+
 🧠 SQL Queries & Reports
 Top Customers
 sql
@@ -95,6 +96,15 @@ Bar Chart: Shows top customers by total sales.
 Line Chart: Displays sales trends across time (year → quarter → month).
 
 Matrix: Slices data by product and region.
+
+## Power BI Model View
+![Model View](screenshots/model_view.png)
+
+## Query Results
+![Query Results](screenshots/query_results.png)
+
+## Final Dashboard
+![Final Dashboard](screenshots/final_dashboard.png)
 
 
 Color choices were kept consistent for clarity. Charts were positioned logically: slicers on the left, visuals on the right.

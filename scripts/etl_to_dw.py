@@ -117,7 +117,7 @@ def load_data_to_db() -> None:
         sales_df.rename(columns={"SaleDate": "sale_date"}, inplace=True)
         sales_df.rename(columns={"Quantity": "quantity"}, inplace=True)
         sales_df.rename(columns={"Payment Type": "payment_type"}, inplace=True)
-
+        sales_df.rename(columns={"CustomerID": "customer_id"})
         # Insert data into the database
         insert_customers(customers_df, cursor)
         insert_products(products_df, cursor)

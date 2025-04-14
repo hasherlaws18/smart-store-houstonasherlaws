@@ -61,3 +61,54 @@ pyspark[sql]
 
 
 
+📊 Overview
+This Power BI project demonstrates an end-to-end data analysis pipeline, from ETL to visualization. It uses data from a sales database (SQLite) and presents interactive insights in a Power BI dashboard.
+
+🧠 SQL Queries & Reports
+Top Customers
+sql
+Copy
+Edit
+SELECT c.name, SUM(s.sale_amount) AS total_spent
+FROM sale s
+JOIN customer c ON s.customer_id = c.customer_id
+GROUP BY c.name
+ORDER BY total_spent DESC;
+This query aggregates total sales per customer and ranks them by spending.
+
+Sales Trends Over Time
+Date fields were extracted in Power BI:
+
+Year
+
+Quarter
+
+Month
+
+These were used to build a drillable time series chart.
+
+📐 Dashboard Design Choices
+Slicer: Enables filtering by product category.
+
+Bar Chart: Shows top customers by total sales.
+
+Line Chart: Displays sales trends across time (year → quarter → month).
+
+Matrix: Slices data by product and region.
+
+
+Color choices were kept consistent for clarity. Charts were positioned logically: slicers on the left, visuals on the right.
+
+🔗 Data Model / Schema
+Spark SQL Schema or Power BI Model View
+
+Your Power BI data model showing relationships between tables.
+
+✅ Query Results
+
+Output of the Top Customers SQL query.
+
+🖥️ Final Dashboard / Charts
+
+Fully interactive Power BI dashboard with drilldowns and slicers.
+

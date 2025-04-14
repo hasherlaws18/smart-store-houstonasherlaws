@@ -17,7 +17,7 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
     """Create tables in the data warehouse if they don't exist."""
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS customer  (
-            CustomerID INTEGER PRIMARY KEY,
+            customer_id INTEGER PRIMARY KEY,
             name TEXT,
             region TEXT,
             join_date TEXT,
@@ -50,8 +50,6 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             sale_amount REAL,
             payment_type TEXT,
             sale_date TEXT,
-            promotion TEXT,
-            quantity INTEGER,
             FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
             FOREIGN KEY (product_id) REFERENCES product (product_id)
         )
@@ -93,7 +91,7 @@ def load_data_to_db() -> None:
         sales_df = pd.read_csv(PREPARED_DATA_DIR.joinpath("sales_data_prepared.csv"))
 
          # Rename columns in the DataFrame to match the database schema
-        #customers_df.rename(columns={"CustomerID": "customer_id"}, inplace=True)
+        customers_df.rename(columns={"CustomerID": "customer_id"}, inplace=True)
         customers_df.rename(columns={"JoinDate": "join_date"}, inplace=True)
         customers_df.rename(columns={"LoyaltyPoints": "loyalty_points"}, inplace=True)
         customers_df.rename(columns={"PreferredContactMethod": "preferred_contact_method"}, inplace=True)
@@ -117,7 +115,7 @@ def load_data_to_db() -> None:
         sales_df.rename(columns={"SaleDate": "sale_date"}, inplace=True)
         sales_df.rename(columns={"Quantity": "quantity"}, inplace=True)
         sales_df.rename(columns={"Payment Type": "payment_type"}, inplace=True)
-        sales_df.rename(columns={"CustomerID": "customer_id"})
+    
         # Insert data into the database
         insert_customers(customers_df, cursor)
         insert_products(products_df, cursor)

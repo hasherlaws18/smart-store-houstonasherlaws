@@ -605,3 +605,11 @@ dtype: int64
 2025-04-21 00:32:33.044 | INFO     | __main__:analyze_top_product_by_weekday:64 - Top products identified for each day of the week.
 2025-04-21 00:32:35.265 | INFO     | __main__:visualize_sales_by_weekday_and_product:101 - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
 2025-04-21 00:58:26.877 | INFO     | __main__:main:121 - Analysis and visualization completed successfully.
+2025-04-21 01:26:54.055 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-21 01:26:54.055 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-21 01:26:54.087 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-21 01:26:54.119 | ERROR    | __main__:create_olap_cube:165 - Error creating OLAP cube: "Column(s) ['sale_amount_usd'] do not exist"
+2025-04-21 01:37:09.700 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-21 01:37:09.700 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-21 01:37:09.725 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-21 01:37:09.757 | ERROR    | __main__:create_olap_cube:165 - Error creating OLAP cube: "Column(s) ['sale_amount_usd'] do not exist"

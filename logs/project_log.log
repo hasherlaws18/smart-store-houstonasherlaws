@@ -576,3 +576,32 @@ dtype: int64
 2025-04-07 20:00:45.764 | INFO     | __main__:main:43 - Starting data warehouse creation...
 2025-04-07 20:00:45.765 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
 2025-04-07 20:00:45.765 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-20 23:19:12.424 | INFO     | __main__:<module>:36 - Logging to file: logs\project_log.log
+2025-04-20 23:19:12.426 | INFO     | __main__:main:56 - STARTING logger.py
+2025-04-20 23:19:12.426 | INFO     | __main__:log_example:47 - This is an example info message.
+2025-04-20 23:19:12.426 | WARNING  | __main__:log_example:48 - This is an example warning message.
+2025-04-20 23:19:12.427 | ERROR    | __main__:log_example:49 - This is an example error message.
+2025-04-20 23:19:12.427 | INFO     | __main__:main:61 - View the log output at logs\project_log.log
+2025-04-20 23:19:12.427 | INFO     | __main__:main:62 - EXITING logger.py.
+2025-04-20 23:24:17.742 | INFO     | __main__:<module>:36 - Logging to file: logs\project_log.log
+2025-04-20 23:24:17.742 | INFO     | __main__:main:56 - STARTING logger.py
+2025-04-20 23:24:17.742 | INFO     | __main__:log_example:47 - This is an example info message.
+2025-04-20 23:24:17.742 | WARNING  | __main__:log_example:48 - This is an example warning message.
+2025-04-20 23:24:17.744 | ERROR    | __main__:log_example:49 - This is an example error message.
+2025-04-20 23:24:17.744 | INFO     | __main__:main:61 - View the log output at logs\project_log.log
+2025-04-20 23:24:17.744 | INFO     | __main__:main:62 - EXITING logger.py.
+2025-04-20 23:44:15.313 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-20 23:44:15.314 | INFO     | __main__:main:110 - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-20 23:44:15.316 | ERROR    | __main__:load_olap_cube:51 - Error loading OLAP cube data: [Errno 2] No such file or directory: 'data\\olap_cubing_outputs\\multidimensional_olap_cube.csv'
+2025-04-21 00:31:30.666 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-21 00:31:30.668 | INFO     | __main__:main:110 - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-21 00:31:30.670 | ERROR    | __main__:load_olap_cube:51 - Error loading OLAP cube data: [Errno 2] No such file or directory: 'data\\olap_cubing_outputs\\multidimensional_olap_cube.csv'
+2025-04-21 00:31:38.523 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-21 00:31:38.524 | INFO     | __main__:main:110 - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-21 00:31:38.526 | ERROR    | __main__:load_olap_cube:51 - Error loading OLAP cube data: [Errno 2] No such file or directory: 'data\\olap_cubing_outputs\\multidimensional_olap_cube.csv'
+2025-04-21 00:32:32.985 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-21 00:32:32.987 | INFO     | __main__:main:110 - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-21 00:32:33.009 | INFO     | __main__:load_olap_cube:48 - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-21 00:32:33.044 | INFO     | __main__:analyze_top_product_by_weekday:64 - Top products identified for each day of the week.
+2025-04-21 00:32:35.265 | INFO     | __main__:visualize_sales_by_weekday_and_product:101 - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
+2025-04-21 00:58:26.877 | INFO     | __main__:main:121 - Analysis and visualization completed successfully.

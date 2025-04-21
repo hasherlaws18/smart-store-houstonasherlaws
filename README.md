@@ -122,3 +122,24 @@ Output of the Top Customers SQL query.
 
 Fully interactive Power BI dashboard with drilldowns and slicers.
 
+✅ Steps Taken:
+Connected to the SmartSalesDSN ODBC Data Source
+
+Used the built-in Odbc.DataSource function in Power BI to connect to the existing SmartSalesDSN.
+
+Created a Native SQL Query
+
+Wrote a custom SQL query using Value.NativeQuery to join the sale and product tables.
+
+Aggregated total sales (SUM(s.sale_amount)) by product_name.
+
+Sorted the results in descending order to highlight top-selling products first.
+
+Loaded the Query into Power BI
+
+Loaded the result set into Power BI as a new table.
+
+Used it to generate visualizations such as bar charts or tables showing top-performing products.
+
+## Sales By product name
+![sales_by_product_name](screenshots/sales%20by%20product%20name.png)
